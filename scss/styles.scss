@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic);
 @import url(https://fonts.googleapis.com/css?family=Yeseva+One);
 
@@ -10,6 +9,17 @@
 
 body{
   background-color: #F2E0D0;
+}
+
+#reddit-container{
+  width: 100%;
+}
+
+#reddit-header{
+  text-align:center;
+  background-color: #BF84AF;
+  padding: 30px 0;
+  height: auto;
 }
 
 h1{
@@ -40,57 +50,38 @@ a{
   }
 }
 
-#reddit-container{
-  margin: 0 auto;
-  width: 1150px;
-  background-color: #FFFFFF;
+#all-posts {
+  column-width: 160px;
+  column-gap: 15px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
 }
 
-#reddit-header{
-  padding: 5px 15px;
-}
-
-#all-posts{
-
-}
-
-.reddit-post{
+.reddit-post {
   display: inline-block;
   width: 160px;
-  margin: 15px;
-  padding: 5px;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(140,105,97,0.5);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(140,105,97,0.5);
-  box-shadow: 0px 0px 5px 0px rgba(140,105,97,0.5);
+  background-color: #FFFFFF;
+  margin: 0 2px 15px;
+  padding: 10px;
+  transition: opacity .4s ease-in-out;
+  column-break-inside: avoid;
+
 }
 
-.reddit-photo{
-  width: 150px;
-  height: 150px;
+.reddit-post img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #BF9B7A;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.thumbnail{
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+div#all-posts:hover .reddit-post:not(:hover) {
+  opacity: 0.4;
 }
 
-// $phone: "(max-width: 500px)";
-// $tablet: "(min-width: 500px) and (max-width: 900px)";
-
-// @mixin awesome($size){
-//   font-size: $size;
-// }
-
-// @media #{$phone} {
-//   body{
-//     background-color: red;
-//     @include awesome(5px);
-//   }
-// }
-
-// @media #{$tablet} {
-//   body{
-//     background-color: blue;
-//   }
-// }
+@media screen and (max-width: 750px) {
+  #all-posts { column-gap: 15px; }
+  #all-posts .reddit-post { width: 100%; }
+}

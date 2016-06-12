@@ -70,9 +70,9 @@ function display(obj) {
 
     //reddit title
     var title = posts[i].data.title;
-    if (title.length > 19){
-      title = title.substring(0, 18) + '...';
-    }
+    // if (title.length > 19){
+    //   title = title.substring(0, 18) + '...';
+    // }
     var $titleElem = $('<p />').addClass('title');
     var $titleLink = $('<a />');
     $titleLink.attr('href', postLink);

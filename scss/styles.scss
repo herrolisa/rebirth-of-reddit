@@ -1,11 +1,29 @@
-$mainColor: pink;
-li{
-  color:$mainColor;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-  &:hover{
-    color: lighten($mainColor, 25%);
-  }
-text-decoration: none}
+#reddit-feed{
+  margin: 0 auto;
+  width: 1200px;
+}
 
+.reddit-post{
+  display: inline-block;
+  width: 150px;
+  margin: 15px;
+  padding: 5px;
+  border: red 1px dashed;
+}
+
+.thumbnails{
+  height: 140px;
+  width: 140px;
+}
+
+.thumbnails img{
+  object-fit: cover;
+  width: 140px;
+  height: 140px;
+}

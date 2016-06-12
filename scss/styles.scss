@@ -1,0 +1,10 @@
+$mainColor: green;
+li{
+  color:$mainColor;
+}
+
+a{
+  &:hover{
+    color: lighten($mainColor, 25%);
+  }
+text-decoration: none}

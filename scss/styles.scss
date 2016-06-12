@@ -1,4 +1,4 @@
-$mainColor: green;
+$mainColor: pink;
 li{
   color:$mainColor;
 }
@@ -8,3 +8,4 @@ a{
     color: lighten($mainColor, 25%);
   }
 text-decoration: none}
+

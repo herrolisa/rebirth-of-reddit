@@ -4,26 +4,22 @@
   box-sizing: border-box;
 }
 
-#reddit-feed{
+#reddit-container{
   margin: 0 auto;
-  width: 1200px;
+  width: 1150px;
+  border: blue 1px dotted;
 }
 
 .reddit-post{
   display: inline-block;
-  width: 150px;
+  width: 160px;
   margin: 15px;
   padding: 5px;
   border: red 1px dashed;
 }
 
-.thumbnails{
-  height: 140px;
-  width: 140px;
-}
-
-.thumbnails img{
+.thumbnail{
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  width: 140px;
-  height: 140px;
 }

@@ -1,13 +1,57 @@
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic);
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  background-color: #F2E0D0;
+}
+
+h1{
+  font-family: 'Yeseva One', cursive;
+  color: #8C6961;
+}
+
+p{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 0.75em;
+  text-align: center;
+  &.author{
+    font-size: 0.65em;
+    font-weight: 300;
+    font-style: italic;
+  }
+  &.comment{
+    font-size: 0.65em;
+    font-weight: 300;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #75425A;
+  &:hover{
+    color: #BF84AF;
+  }
+}
+
 #reddit-container{
   margin: 0 auto;
   width: 1150px;
-  border: blue 1px dotted;
+  background-color: #FFFFFF;
+}
+
+#reddit-header{
+  padding: 5px 15px;
+}
+
+#all-posts{
+
 }
 
 .reddit-post{
@@ -15,7 +59,14 @@
   width: 160px;
   margin: 15px;
   padding: 5px;
-  border: red 1px dashed;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(140,105,97,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(140,105,97,0.5);
+  box-shadow: 0px 0px 5px 0px rgba(140,105,97,0.5);
+}
+
+.reddit-photo{
+  width: 150px;
+  height: 150px;
 }
 
 .thumbnail{
@@ -23,3 +74,23 @@
   height: 150px;
   object-fit: cover;
 }
+
+// $phone: "(max-width: 500px)";
+// $tablet: "(min-width: 500px) and (max-width: 900px)";
+
+// @mixin awesome($size){
+//   font-size: $size;
+// }
+
+// @media #{$phone} {
+//   body{
+//     background-color: red;
+//     @include awesome(5px);
+//   }
+// }
+
+// @media #{$tablet} {
+//   body{
+//     background-color: blue;
+//   }
+// }

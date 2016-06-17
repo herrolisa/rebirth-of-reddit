@@ -15,22 +15,7 @@ $.ajax({
 });
 
 function display(obj) {
-  //add container for all reddit posts
-  var $redditContainer = $('<div />');
-  $redditContainer.attr('id', 'reddit-container');
-  $('body').append($redditContainer);
-
-  //reddit header container
-  var $redditHeader = $('<div />');
-  $redditHeader.attr('id', 'reddit-header');
-  var $h1Elem = $('<h1 />');
-  $h1Elem.text('Welcome to Corgiville!');
-  $redditHeader.append($h1Elem);
-  $redditContainer.append($redditHeader);
-
-  var $allPosts = $('<div />');
-  $allPosts.attr('id', 'all-posts');
-  $redditContainer.append($allPosts);
+  var $allPosts = $('#all-posts');
 
   var posts = obj.data.children;
   for (var i = 0; i < posts.length; i++) {
@@ -43,7 +28,7 @@ function display(obj) {
     $redditPost.append($redditPhoto);
     var postLink = posts[i].data.url;
 
-    //thumbnail photos with link to original photo (or reddit post)
+    // // thumbnail photos with link to original photo (or reddit post)
     // var thumbnail = posts[i].data.thumbnail;
     // if (thumbnail === 'self'){
     //   thumbnail = 'http://cdn9.staztic.com/app/a/6197/6197331/corgi-alex-1-l-140x140.png';

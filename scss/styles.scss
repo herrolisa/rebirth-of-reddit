@@ -1,5 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic);
-@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,300i,400,600';
+
+//variables
+$dark-purple: #8C4F6B;
+$light-purple: #BF84AF;
+$dark-brown: #BF9B7A;
+$medium-brown: #8C6961;
+$light-brown: #F2E0D0;
 
 *{
   margin: 0;
@@ -9,6 +16,7 @@
 
 body{
   background-color: #F2E0D0;
+
 }
 
 #reddit-container{
@@ -17,20 +25,31 @@ body{
 
 #reddit-header{
   text-align:center;
-  background-color: #BF84AF;
-  padding: 30px 0;
+  background-color: $dark-purple;
+  background: url('/img/paw-pattern.jpg');
+  padding: 25px 0;
   height: auto;
+  border-bottom: 3px solid darken($dark-purple, 4%);
+}
+
+#nav-bar{
+  background-color: $light-purple;
+  height: 45px;
+  border-bottom: 3px solid darken($light-purple, 4%);
 }
 
 h1{
-  font-family: 'Yeseva One', cursive;
-  color: #8C6961;
+  font-family: 'Pacifico', cursive;
+  color: white;
 }
 
 p{
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 0.75em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8em;
   text-align: center;
+  &.title{
+    font-weight: 600;
+  }
   &.author{
     font-size: 0.65em;
     font-weight: 300;
@@ -44,9 +63,9 @@ p{
 
 a{
   text-decoration: none;
-  color: #75425A;
+  color: darken($dark-purple, 4%);
   &:hover{
-    color: #BF84AF;
+    color: darken($light-purple, 4%);
   }
 }
 
@@ -64,7 +83,7 @@ a{
   background-color: #FFFFFF;
   margin: 0 2px 15px;
   padding: 10px;
-  transition: opacity .4s ease-in-out;
+  // transition: opacity .4s ease-in-out;
   column-break-inside: avoid;
 
 }
@@ -77,9 +96,9 @@ a{
   margin-bottom: 5px;
 }
 
-div#all-posts:hover .reddit-post:not(:hover) {
-  opacity: 0.4;
-}
+// div#all-posts:hover .reddit-post:not(:hover) {
+//   opacity: 0.4;
+// }
 
 @media screen and (max-width: 750px) {
   #all-posts { column-gap: 15px; }

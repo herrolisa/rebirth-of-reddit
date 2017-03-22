@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/herrolisa/rebirth-of-reddit.git"
+    "url": "git+https://github.com/lisazhou/rebirth-of-reddit.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/herrolisa/rebirth-of-reddit/issues"
+    "url": "https://github.com/lisazhou/rebirth-of-reddit/issues"
   },
-  "homepage": "https://github.com/herrolisa/rebirth-of-reddit#readme",
+  "homepage": "https://github.com/lisazhou/rebirth-of-reddit#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1"
